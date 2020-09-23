@@ -1,0 +1,9 @@
+# Text editor data
+.vscode/
+
+# The dependencies
+node_modules/
+
+# Test Results
+.nyc_output/
+coverage/
