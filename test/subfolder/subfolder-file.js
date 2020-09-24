@@ -1,0 +1,1 @@
+module.exports = 'subfolder file'
