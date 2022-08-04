@@ -4,12 +4,11 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/d28e147b51ea7a31ed70/test_coverage)](https://codeclimate.com/github/exoRift/mass-require/test_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/d28e147b51ea7a31ed70/maintainability)](https://codeclimate.com/github/exoRift/mass-require/maintainability)
 
-[![Discord Server](https://img.shields.io/badge/-Support%20Server-b.svg?colorA=697ec4&colorB=7289da&logo=discord)](https://discord.gg/Rqd8SJ9)
-
 [![Version](https://img.shields.io/github/package-json/v/exoRift/mass-require.svg?label=Version)](#)
 [![NPM Downloads](https://img.shields.io/npm/dt/mass-require?label=Downloads&logo=npm)](#)
 
 [![NPM Page](https://img.shields.io/badge/NPM-Page-critical?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/mass-require)
+[![Gitter](https://img.shields.io/badge/CHAT%20WITH%20US-GITTER-f68d42?style=for-the-badge&logo=gitter)](https://gitter.im/exoRift/mass-require)
 
 Usage
 -
