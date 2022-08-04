@@ -1,6 +1,6 @@
 {
   "name": "mass-require",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A NodeJS library to require all files in a folder (and its subfolders) in object or array format",
   "main": "index.js",
   "scripts": {
@@ -26,12 +26,10 @@
   ],
   "devDependencies": {
     "ava": "^1.1.0",
-    "eslint": "^7.9.0",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.22.0",
+    "eslint": "^8.21.0",
+    "eslint-config-standard": "^17.0.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-promise": "^6.0.0",
     "nyc": "^15.1.0"
   },
   "author": "exoRift",
@@ -41,7 +39,7 @@
   },
   "homepage": "https://github.com/exoRift/mass-require#readme",
   "engines": {
-    "node": ">= 12.0.0"
+    "node": ">= 10.0.0"
   },
   "repository": {
     "type": "git",

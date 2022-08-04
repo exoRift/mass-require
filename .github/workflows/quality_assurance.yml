@@ -17,19 +17,19 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node-version: [12.x]
-        
+        node: [16]
+
     runs-on: ${{ matrix.os }}
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Set up Node
-        uses: actions/setup-node@v1.4.2
+        uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: ${{ matrix.node }}
       - name: Cache Dependencies
         id: dep-cache
-        uses: actions/cache@v1.1.2
+        uses: actions/cache@v3
         env:
           cache-name: dep-cache
         with:
@@ -48,11 +48,10 @@ jobs:
         run: npm test
       - name: Upload Coverage
         if: success()
-        uses: paambaati/codeclimate-action@v2.6.0
+        uses: paambaati/codeclimate-action@v3
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CODECLIMATE_TOKEN }}
         with:
-          coverageCommand: 'echo'
           coverageLocations: ${{ github.workspace }}/coverage/lcov.info:lcov
   lint:
     name: Linting
@@ -60,19 +59,19 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node-version: [12.x]
+        node: [16]
 
     runs-on: ${{ matrix.os }}
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Set up Node
-        uses: actions/setup-node@v1.4.2
+        uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: ${{ matrix.node }}
       - name: Cache Dependencies
         id: dep-cache
-        uses: actions/cache@v1.1.2
+        uses: actions/cache@v3
         env:
           cache-name: dep-cache
         with:
