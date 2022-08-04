@@ -2,11 +2,11 @@ version: '2'
 checks:
   method-complexity:
     config:
-      threshold: 10
+      threshold: 30
 plugins:
   eslint:
     enabled: true
-    channel: 'eslint-5'
+    channel: 'eslint-7'
     config:
       ignore_warnings: true
 exclude_patterns:
